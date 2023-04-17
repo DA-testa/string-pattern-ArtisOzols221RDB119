@@ -1,5 +1,5 @@
 def read_input():
-    iorf = input()
+    iorf = input().strip()
     if iorf != "I" and iorf != "F":
         raise ValueError("Input not I or F")
     if iorf == "I":
