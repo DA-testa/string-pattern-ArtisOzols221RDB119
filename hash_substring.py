@@ -3,13 +3,13 @@ def read_input():
     if iorf != "I" and iorf != "F":
         raise ValueError("Input not I or F")
     if iorf == "I":
-        find = input()
-        text = input()
+        find = input().strip()
+        text = input().strip()
     elif iorf == "F":
         try:
             with open("./tests/06") as file:
-                find = file.readline()
-                text = file.readline()
+                find = file.readline().strip()
+                text = file.readline().strip()
         except FileNotFoundError:
             print("No file found")
             exit()
